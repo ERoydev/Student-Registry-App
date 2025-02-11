@@ -32,6 +32,12 @@
 
 3. In my jenkins i need on my Job => Configure to set Triggers to **GitHub hook trigger for GITScm polling** => Active
 
+## Errors:
+
+1. If error occurs.
+    - I can check in Manage Jenkins => System Log - to see if jenkins has received POST request from Github webhook
+    - If it does likely my issue is somewhere from Configuration of the Job 
+
 
 
 
