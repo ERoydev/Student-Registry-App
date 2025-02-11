@@ -15,3 +15,19 @@
         Secret = Optionally, secret token for additional security
 
     ```
+
+2. Since my jenkis is running locally i cannot create webhook with local host since github cannot access private network.
+    - use additionaly software named **ngrock**
+    - It downloads ngrock.exe file which opens my terminal and there i nee to run
+    ```bash
+        ngrok http 8080
+    ```
+    - On the Forwarding => I have url link which is redirecting to my jenkins. I am going to use it as PAYLOAD_URL for git webhook
+    ```ru
+        PAYLOAD_URL = https://ac63-77-78-30-58.ngrok-free.app/github-webhook/
+        Content Type = application/json
+        Secret = Optionally, secret token for additional security
+
+    ```
+
+**No you see this is one thing that makes github actions more easy**
