@@ -39,6 +39,3 @@
     - If it does likely my issue is somewhere from Configuration of the Job 
 
 
-
-
-**No you see this is one thing that makes github actions more easy**
