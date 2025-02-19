@@ -34,6 +34,22 @@
 
 4. Have in mind if you are testing .Net apps you should install MSBuild and .NET SDK SUPPORT plugins inside jenkins
 
+5. I solve the problem of dotnet not found in jenkins with these commands:
+
+5.1 First i enter into docker into my terminal
+```bash
+    docker exec -u root -it myjenkins bash
+```
+5.2 I install dotnet
+```bash
+    apt-get update
+    apt-get install -y wget apt-transport-https software-properties-common
+    wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+    dpkg -i packages-microsoft-prod.deb
+    apt-get update
+    apt-get install -y dotnet-sdk-6.0
+```
+
 ## Errors:
 
 1. If error occurs.
