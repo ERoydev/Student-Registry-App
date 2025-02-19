@@ -32,6 +32,8 @@
 
 3. In my jenkins i need on my Job => Configure to set Triggers to **GitHub hook trigger for GITScm polling** => Active
 
+4. Have in mind if you are testing .Net apps you should install MSBuild and .NET SDK SUPPORT plugins inside jenkins
+
 ## Errors:
 
 1. If error occurs.
